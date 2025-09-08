@@ -1,0 +1,11 @@
+{
+  "name": "jeu-de",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass scss:css",
+    "sass:watch": "npm run sass -- --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}

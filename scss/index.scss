@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+@import "header";
+
+#game-container {
+  background: beige;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 100px;
+}
+
+.player-card {
+  width: 300px;
+  height: 300px;
+  border: thick solid goldenrod;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.player-card-name {
+  background: limegreen;
+  height: 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: gold;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.player-card-body {
+  background: linear-gradient(180deg, rgba(255, 165, 0, 1) 75%, rgba(255, 0, 255, 1) 100%);
+  height: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-card-score {
+  width: 2em;
+  height: 2em;
+  border: medium solid red;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: lightskyblue;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.player-card-roll-button {
+  background: limegreen;
+  width: 100%;
+  height: 20%;
+  border: none;
+  cursor: pointer;
+
+  color: orangered;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.player-card-roll-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@import "footer";
